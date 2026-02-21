@@ -1,0 +1,169 @@
+/* --- INTERVIEW MAIN LAYOUT --- */
+.interview-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%; /* Ensures it takes full container width */
+  max-width: 1400px; /* High upper limit for ultra-wide screens */
+  margin: 0 auto;
+}
+
+/* --- HEADER CARD (Wide Version) --- */
+.interview-header-card {
+  background: white;
+  border-radius: 12px;
+  padding: 30px; /* Increased padding for a more spacious feel */
+  border: 1px solid #eef2f6;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.interview-header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.header-title-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.header-blue-icon {
+  color: #3b82f6;
+}
+
+.interview-card-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0;
+}
+
+.total-interviews-badge {
+  background-color: #eff6ff;
+  color: #3b82f6;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #dbeafe;
+}
+
+/* --- SEARCH & FILTERS (Flexible Width) --- */
+.interview-controls {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+
+.search-wrapper {
+  position: relative;
+  flex: 1; /* This makes the search bar stretch to fill the space */
+}
+
+.search-icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #94a3b8;
+}
+
+.interview-search-input {
+  width: 100%;
+  padding: 14px 16px 14px 48px;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+  background-color: #f8fafc;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+.interview-search-input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.1);
+}
+
+.filter-date-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 24px;
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  color: #475569;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s;
+}
+
+.filter-date-btn:hover {
+  border-color: #cbd5e1;
+  background-color: #f8fafc;
+}
+
+/* --- EMPTY STATE (Full Width) --- */
+.interview-empty-state {
+  background: white;
+  border-radius: 12px;
+  padding: 100px 40px; /* Tall and wide padding */
+  border: 1px solid #eef2f6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.empty-icon-wrapper {
+  margin-bottom: 28px;
+  opacity: 0.4;
+}
+
+.empty-title {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0 0 12px 0;
+}
+
+.empty-subtitle {
+  color: #64748b;
+  margin: 0 0 40px 0;
+  font-size: 1.05rem;
+  max-width: 500px;
+}
+
+.go-to-set-sched-btn {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  padding: 14px 32px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.2);
+  transition: transform 0.2s, background 0.2s;
+}
+
+.go-to-set-sched-btn:hover {
+  background-color: #2563eb;
+  transform: translateY(-2px);
+}

@@ -1,0 +1,411 @@
+<<<<<<< HEAD
+/* --- SET SCHEDULE GRID --- */
+=======
+/* --- 1. CORE LAYOUT --- */
+>>>>>>> f0b5952 (jfjfj)
+.set-schedule-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.sched-card {
+  background: white;
+  border: 1px solid #eef2f6;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+.sched-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.sched-card-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0;
+}
+
+<<<<<<< HEAD
+/* --- INPUTS & SEARCH --- */
+=======
+/* --- 2. INPUTS, SEARCH & DROPDOWNS --- */
+>>>>>>> f0b5952 (jfjfj)
+.sched-input-container {
+  position: relative;
+  margin-bottom: 12px;
+}
+
+.sched-icon-left {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #94a3b8;
+}
+
+.sched-input {
+  width: 100%;
+  padding: 12px 14px 12px 42px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  outline: none;
+  box-sizing: border-box;
+}
+
+<<<<<<< HEAD
+.sched-input:focus {
+  border-color: #3b82f6;
+}
+
+.sched-filled {
+  background-color: #f8fafc;
+  padding-left: 16px;
+}
+=======
+.sched-input:focus { border-color: #3b82f6; }
+.sched-filled { background-color: #f8fafc; padding-left: 16px; }
+>>>>>>> f0b5952 (jfjfj)
+
+.sched-dropdown-box {
+  display: flex;
+  align-items: center;
+<<<<<<< HEAD
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 12px 14px;
+  margin-bottom: 12px;
+}
+
+.sched-dropdown-text {
+  margin-left: 28px;
+  font-weight: 500;
+  flex: 1;
+}
+
+/* --- APPLICANT LIST --- */
+=======
+  gap: 12px;
+  background-color: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 10px 14px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.sched-dropdown-text {
+  flex-grow: 1;
+  color: #1e293b;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.sched-icon-right { color: #94a3b8; margin-left: auto; }
+.rotate { transform: rotate(180deg); transition: transform 0.2s; }
+
+.sched-custom-dropdown-menu {
+  position: absolute;
+  top: 105%;
+  left: 0;
+  width: 100%;
+  background: white;
+  border: 1px solid #e0e6ed;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  z-index: 100;
+  overflow: hidden;
+}
+
+.sched-dropdown-item {
+  padding: 12px 15px;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+}
+
+.sched-dropdown-item:hover { background-color: #f0f7ff; color: #007bff; }
+
+/* --- 3. APPLICANT LIST --- */
+.sched-applicant-list {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+>>>>>>> f0b5952 (jfjfj)
+.sched-app-row {
+  display: flex;
+  gap: 12px;
+  padding: 16px;
+  border: 1px solid #f1f5f9;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+<<<<<<< HEAD
+.sched-app-row:hover {
+  background-color: #f0f7ff;
+  border-color: #3b82f6;
+}
+
+.sched-checkbox {
+  width: 18px;
+  height: 18px;
+  accent-color: #3b82f6;
+  cursor: pointer;
+}
+=======
+.sched-app-row:hover { background-color: #f0f7ff; border-color: #3b82f6; }
+.selected-border { border-color: #3b82f6; background-color: #f0f7ff; }
+
+.sched-checkbox { width: 18px; height: 18px; accent-color: #3b82f6; cursor: pointer; }
+>>>>>>> f0b5952 (jfjfj)
+
+.sched-id-badge {
+  background: #dbeafe;
+  color: #3b82f6;
+  font-size: 0.7rem;
+  font-weight: 800;
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin-right: 8px;
+}
+
+.sched-name-text { font-weight: 700; }
+.sched-contact-line { font-size: 0.8rem; color: #64748b; margin-top: 4px; }
+<<<<<<< HEAD
+.sched-divider { color: #cbd5e1; margin: 0 4px; }
+
+/* --- DASHED BOX (EMPTY STATE) --- */
+=======
+
+/* --- 4. ASSIGN DATE & CALENDAR POPUP (THE FIX) --- */
+.assign-date-container {
+  position: relative;
+  margin-top: 15px;
+}
+
+.sched-assign-btn {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  background: white;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.sched-assign-btn:disabled { background: #f3f4f6; cursor: not-allowed; }
+
+.calendar-picker-popup {
+  position: absolute;
+  bottom: 110%; /* Makes it pop UP above button */
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 12px;
+  width: 220px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+.calendar-header-small {
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #1e293b;
+}
+
+.calendar-grid-small {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 2px;
+}
+
+.cal-weekday-label {
+  font-size: 10px;
+  font-weight: 700;
+  color: #94a3b8;
+  text-align: center;
+  padding-bottom: 4px;
+}
+
+.cal-day-small {
+  padding: 6px 0;
+  font-size: 12px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 6px;
+  color: #475569;
+}
+
+.cal-day-small:hover { background: #f1f5f9; color: #3b82f6; }
+.active-day-blue { background: #3b82f6 !important; color: white !important; font-weight: 600; }
+
+/* --- 5. CONFIRMATION AREA --- */
+.date-confirm-box {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.selected-date-display {
+  background: #eff6ff;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #bfdbfe;
+  color: #1d4ed8;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+}
+
+.confirm-move-btn {
+  background: #3b82f6;
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 10px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+/* --- 6. RIGHT COLUMN & EMPTY STATES --- */
+>>>>>>> f0b5952 (jfjfj)
+.sched-dashed-box {
+  border: 2px dashed #e2e8f0;
+  border-radius: 12px;
+  padding: 50px 20px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.sched-circle-icon {
+  background: #fff7ed;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+}
+
+.sched-orange { color: #f97316; }
+.sched-empty-main { font-weight: 600; margin: 0; }
+.sched-empty-sub { font-size: 0.85rem; color: #94a3b8; margin-top: 4px; }
+
+<<<<<<< HEAD
+/* --- BUTTONS --- */
+.sched-text-link {
+  background: none;
+  border: none;
+  color: #3b82f6;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+=======
+>>>>>>> f0b5952 (jfjfj)
+.sched-btn-primary {
+  width: 100%;
+  padding: 16px;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+<<<<<<< HEAD
+.sched-btn-primary:hover {
+  background-color: #2563eb;
+}
+
+.sched-label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #64748b;
+  margin-bottom: 8px;
+}
+
+.sched-form-group { margin-bottom: 20px; }
+.sched-status-label { font-size: 0.8rem; color: #94a3b8; }
+=======
+.sched-label { display: block; font-size: 0.85rem; font-weight: 600; color: #64748b; margin-bottom: 8px; }
+.sched-form-group { margin-bottom: 20px; }
+.sched-status-label { font-size: 0.8rem; color: #94a3b8; }
+
+/* --- 7. MODAL STYLING --- */
+.modal-overlay {
+  position: fixed;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.confirm-modal {
+  background: white;
+  width: 450px;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1);
+}
+
+.modal-header h2 { margin: 10px 0 5px; font-size: 20px; }
+.modal-header p { color: #6b7280; font-size: 14px; }
+.modal-section-box { border: 1px solid #e5e7eb; border-radius: 12px; padding: 15px; margin: 15px 0; }
+.modal-label { font-size: 11px; color: #3b82f6; font-weight: 700; }
+.modal-next-step-box { background: #fffbeb; border: 1px solid #fde68a; padding: 12px; border-radius: 8px; font-size: 13px; }
+
+.modal-footer { display: flex; gap: 12px; margin-top: 20px; }
+.btn-cancel { flex: 1; padding: 12px; border: 1px solid #d1d5db; border-radius: 8px; background: white; cursor: pointer; }
+.btn-confirm { flex: 1; padding: 12px; background: #3b82f6; color: white; border: none; border-radius: 8px; cursor: pointer; }
+
+/* --- 8. UTILITIES --- */
+.blue-text { color: #3b82f6; }
+.orange-text { color: #f97316; }
+.dot-blue { height: 6px; width: 6px; background-color: #3b82f6; border-radius: 50%; display: inline-block; margin-right: 8px; }
+.sched-text-link {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: none;
+  border: none;
+  color: #007bff;
+  font-size: 13px;
+  cursor: pointer;
+  font-weight: 600;
+}
+>>>>>>> f0b5952 (jfjfj)
