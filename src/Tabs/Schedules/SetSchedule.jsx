@@ -1,16 +1,3 @@
-<<<<<<< HEAD
-import React from 'react';
-import { Search, MapPin, Clock, ChevronDown } from 'lucide-react';
-import './SetSchedule.css'; // <--- THIS WAS MISSING
-
-const SetSchedule = () => {
-  const applicants = [
-    { id: 'APP004', name: 'Ana Garcia', email: 'ana.garcia@email.com', phone: '+63 945 678 9012' },
-    { id: 'APP005', name: 'Jose Mendoza', email: 'jose.mendoza@email.com', phone: '+63 956 789 0123' },
-    { id: 'APP006', name: 'Maria Santos', email: 'm.santos@email.com', phone: '+63 917 123 4567' },
-  ];
-
-=======
 import React, { useState } from 'react';
 import { Search, MapPin, Clock, ChevronDown, ArrowUpDown, Calendar, X, AlertCircle } from 'lucide-react';
 import './SetSchedule.css';
@@ -52,16 +39,12 @@ const SetSchedule = () => {
 
   const selectedApplicantsData = allApplicants.filter(app => selectedAppIds.includes(app.id));
 
->>>>>>> f0b5952 (jfjfj)
   return (
     <div className="set-schedule-grid">
       {/* LEFT COLUMN: SELECT APPLICANTS */}
       <div className="sched-card">
         <div className="sched-card-header">
           <h3 className="sched-card-title">Select Applicants</h3>
-<<<<<<< HEAD
-          <button className="sched-text-link">Select All</button>
-=======
           <div style={{ display: 'flex', gap: '10px' }}>
              <button className="sched-text-link" onClick={() => setSortConfig(sortConfig === 'name' ? 'id' : 'name')}>
               <ArrowUpDown size={14} /> Sort: {sortConfig.toUpperCase()}
@@ -70,29 +53,10 @@ const SetSchedule = () => {
                 Select All
             </button>
           </div>
->>>>>>> f0b5952 (jfjfj)
         </div>
 
         <div className="sched-input-container">
           <Search size={18} className="sched-icon-left" />
-<<<<<<< HEAD
-          <input type="text" className="sched-input" placeholder="Search..." />
-        </div>
-
-        <div className="sched-dropdown-box">
-          <MapPin size={18} className="sched-icon-left" />
-          <span className="sched-dropdown-text">Manila</span>
-          <ChevronDown size={18} className="sched-icon-right" />
-        </div>
-
-        <div className="sched-applicant-list">
-          {applicants.map((app) => (
-            <label key={app.id} className="sched-app-row clickable-row">
-              <input 
-                type="checkbox" 
-                className="sched-checkbox" 
-                defaultChecked={app.id === 'APP004'} 
-=======
           <input 
             type="text" 
             className="sched-input" 
@@ -127,37 +91,18 @@ const SetSchedule = () => {
                 className="sched-checkbox" 
                 checked={selectedAppIds.includes(app.id)}
                 onChange={() => toggleApplicant(app.id)}
->>>>>>> f0b5952 (jfjfj)
               />
               <div className="sched-app-info">
                 <div className="sched-app-name-line">
                   <span className="sched-id-badge">{app.id}</span>
                   <span className="sched-name-text">{app.name}</span>
                 </div>
-<<<<<<< HEAD
-                <div className="sched-contact-line">
-                  {app.email} <span className="sched-divider">|</span> {app.phone}
-                </div>
-=======
                 <div className="sched-contact-line">{app.email} | {app.phone}</div>
->>>>>>> f0b5952 (jfjfj)
               </div>
             </label>
           ))}
         </div>
-<<<<<<< HEAD
-      </div>
 
-      {/* RIGHT COLUMN: ASSIGN TIMES */}
-      <div className="sched-card">
-        <div className="sched-card-header">
-          <h3 className="sched-card-title">Assign Dates and Times</h3>
-          <span className="sched-status-label">0 Applicant(s) with Dates</span>
-        </div>
-
-=======
-
-        {/* --- ASSIGN DATE BUTTON AREA --- */}
         <div className="assign-date-container">
             <button 
                 className="sched-assign-btn"
@@ -214,32 +159,14 @@ const SetSchedule = () => {
           <h3 className="sched-card-title">Assign Dates and Times</h3>
           <span className="sched-status-label">{selectedAppIds.length} Applicant(s) Selected</span>
         </div>
->>>>>>> f0b5952 (jfjfj)
         <div className="sched-form-group">
           <label className="sched-label">Location</label>
           <input type="text" className="sched-input sched-filled" defaultValue="Burke Building, Binondo, Manila" />
         </div>
-<<<<<<< HEAD
-
-=======
->>>>>>> f0b5952 (jfjfj)
         <div className="sched-form-group">
           <label className="sched-label">Room Number</label>
           <input type="text" className="sched-input sched-filled" defaultValue="210" />
         </div>
-<<<<<<< HEAD
-
-        <div className="sched-dashed-box">
-          <div className="sched-circle-icon">
-            <Clock size={32} className="sched-orange" />
-          </div>
-          <p className="sched-empty-main">No applicants with dates yet</p>
-          <p className="sched-empty-sub">Assign dates to applicants first</p>
-        </div>
-
-        <button className="sched-btn-primary">Save Schedule</button>
-      </div>
-=======
         <div className="sched-dashed-box">
           <div className="sched-circle-icon"><Clock size={32} className="sched-orange" /></div>
           <p className="sched-empty-main">No applicants with dates yet</p>
@@ -288,13 +215,12 @@ const SetSchedule = () => {
                 </div>
 
                 <div className="modal-footer">
-                    <button className="btn-cancel" onnpmClick={() => setIsModalOpen(false)}>Cancel</button>
+                    <button className="btn-cancel" onClick={() => setIsModalOpen(false)}>Cancel</button>
                     <button className="btn-confirm" onClick={() => { alert("Saved!"); setIsModalOpen(false); }}>Confirm & Proceed</button>
                 </div>
             </div>
         </div>
       )}
->>>>>>> f0b5952 (jfjfj)
     </div>
   );
 };

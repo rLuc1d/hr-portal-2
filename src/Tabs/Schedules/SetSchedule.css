@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-/* --- SET SCHEDULE GRID --- */
-=======
 /* --- 1. CORE LAYOUT --- */
->>>>>>> f0b5952 (jfjfj)
 .set-schedule-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -31,11 +27,7 @@
   margin: 0;
 }
 
-<<<<<<< HEAD
-/* --- INPUTS & SEARCH --- */
-=======
 /* --- 2. INPUTS, SEARCH & DROPDOWNS --- */
->>>>>>> f0b5952 (jfjfj)
 .sched-input-container {
   position: relative;
   margin-bottom: 12px;
@@ -59,38 +51,12 @@
   box-sizing: border-box;
 }
 
-<<<<<<< HEAD
-.sched-input:focus {
-  border-color: #3b82f6;
-}
-
-.sched-filled {
-  background-color: #f8fafc;
-  padding-left: 16px;
-}
-=======
 .sched-input:focus { border-color: #3b82f6; }
 .sched-filled { background-color: #f8fafc; padding-left: 16px; }
->>>>>>> f0b5952 (jfjfj)
 
 .sched-dropdown-box {
   display: flex;
   align-items: center;
-<<<<<<< HEAD
-  border: 1px solid #e2e8f0;
-  border-radius: 8px;
-  padding: 12px 14px;
-  margin-bottom: 12px;
-}
-
-.sched-dropdown-text {
-  margin-left: 28px;
-  font-weight: 500;
-  flex: 1;
-}
-
-/* --- APPLICANT LIST --- */
-=======
   gap: 12px;
   background-color: white;
   border: 1px solid #e2e8f0;
@@ -141,7 +107,6 @@
   overflow-y: auto;
 }
 
->>>>>>> f0b5952 (jfjfj)
 .sched-app-row {
   display: flex;
   gap: 12px;
@@ -153,24 +118,10 @@
   cursor: pointer;
 }
 
-<<<<<<< HEAD
-.sched-app-row:hover {
-  background-color: #f0f7ff;
-  border-color: #3b82f6;
-}
-
-.sched-checkbox {
-  width: 18px;
-  height: 18px;
-  accent-color: #3b82f6;
-  cursor: pointer;
-}
-=======
 .sched-app-row:hover { background-color: #f0f7ff; border-color: #3b82f6; }
 .selected-border { border-color: #3b82f6; background-color: #f0f7ff; }
 
 .sched-checkbox { width: 18px; height: 18px; accent-color: #3b82f6; cursor: pointer; }
->>>>>>> f0b5952 (jfjfj)
 
 .sched-id-badge {
   background: #dbeafe;
@@ -184,11 +135,7 @@
 
 .sched-name-text { font-weight: 700; }
 .sched-contact-line { font-size: 0.8rem; color: #64748b; margin-top: 4px; }
-<<<<<<< HEAD
 .sched-divider { color: #cbd5e1; margin: 0 4px; }
-
-/* --- DASHED BOX (EMPTY STATE) --- */
-=======
 
 /* --- 4. ASSIGN DATE & CALENDAR POPUP (THE FIX) --- */
 .assign-date-container {
@@ -295,7 +242,6 @@
 }
 
 /* --- 6. RIGHT COLUMN & EMPTY STATES --- */
->>>>>>> f0b5952 (jfjfj)
 .sched-dashed-box {
   border: 2px dashed #e2e8f0;
   border-radius: 12px;
@@ -320,18 +266,7 @@
 .sched-empty-main { font-weight: 600; margin: 0; }
 .sched-empty-sub { font-size: 0.85rem; color: #94a3b8; margin-top: 4px; }
 
-<<<<<<< HEAD
-/* --- BUTTONS --- */
-.sched-text-link {
-  background: none;
-  border: none;
-  color: #3b82f6;
-  font-weight: 600;
-  cursor: pointer;
-}
-
-=======
->>>>>>> f0b5952 (jfjfj)
+/* --- BUTTONS & FORM ELEMENTS --- */
 .sched-btn-primary {
   width: 100%;
   padding: 16px;
@@ -344,7 +279,6 @@
   cursor: pointer;
 }
 
-<<<<<<< HEAD
 .sched-btn-primary:hover {
   background-color: #2563eb;
 }
@@ -357,10 +291,6 @@
   margin-bottom: 8px;
 }
 
-.sched-form-group { margin-bottom: 20px; }
-.sched-status-label { font-size: 0.8rem; color: #94a3b8; }
-=======
-.sched-label { display: block; font-size: 0.85rem; font-weight: 600; color: #64748b; margin-bottom: 8px; }
 .sched-form-group { margin-bottom: 20px; }
 .sched-status-label { font-size: 0.8rem; color: #94a3b8; }
 
@@ -408,4 +338,3 @@
   cursor: pointer;
   font-weight: 600;
 }
->>>>>>> f0b5952 (jfjfj)

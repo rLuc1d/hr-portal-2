@@ -1,140 +1,18 @@
-<<<<<<< HEAD
-.applicants-container { display: flex; flex-direction: column; gap: 20px; }
-
-/* Tab Title Area */
-.tab-title-area { display: flex; align-items: center; gap: 12px; margin-bottom: 5px; }
-.title-icon { font-size: 1.5rem; }
-.tab-title-area h2 { font-size: 1.4rem; color: #2d3748; margin: 0; }
-
-/* Sub-tabs styling */
-.sub-tabs {
-  background: white; padding: 10px; border-radius: 10px;
-  display: flex; gap: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.03);
-}
-.sub-tab-btn {
-  padding: 8px 20px; border: none; background: none; cursor: pointer;
-  border-radius: 6px; font-weight: 500; color: #718096; transition: all 0.2s;
-}
-.sub-tab-btn.active { background: #5d9cec; color: white; }
-
-/* Table Controls */
-.table-controls { display: flex; gap: 15px; margin-top: 10px; }
-.search-input { flex: 2; padding: 12px; border: 1px solid #e0e6ed; border-radius: 8px; font-size: 0.9rem; }
-.filter-select { flex: 1; padding: 10px; border: 1px solid #e0e6ed; border-radius: 8px; background: white; cursor: pointer; color: #4a5568; }
-
-/* Table Styling */
-.table-wrapper { 
-  background: white; 
-  border-radius: 12px; 
-  overflow: hidden; 
-  box-shadow: 0 2px 10px rgba(0,0,0,0.03); 
-  display: flex;
-  flex-direction: column;
-}
-.applicants-table { width: 100%; border-collapse: collapse; text-align: left; }
-.applicants-table th { background: #f8fafc; padding: 15px; font-size: 0.85rem; color: #5d9cec; border-bottom: 1px solid #e0e6ed; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; }
-.applicants-table td { padding: 15px; border-bottom: 1px solid #f0f2f5; font-size: 0.9rem; vertical-align: middle; }
-
-.bold { font-weight: 600; color: #2d3748; }
-.contact-info { font-size: 0.75rem; color: #718096; margin-bottom: 2px; }
-
-/* Status Pills */
-.status-pill {
-  padding: 4px 12px; border-radius: 6px; font-size: 0.7rem; font-weight: 800;
-}
-.applied { background: #eef5ff; color: #5d9cec; }
-.interview { background: #f5f3ff; color: #a29bfe; }
-.hired { background: #ebfbf2; color: #2ecc71; }
-.rejected { background: #fff1f0; color: #e74c3c; }
-
-.action-icon { background: none; border: none; cursor: pointer; margin-right: 8px; color: #94a3b8; transition: color 0.2s; }
-.action-icon:hover { color: #5d9cec; }
-
-/* Pagination Styling */
-.pagination-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 25px;
-  background: white;
-  border-top: 1px solid #f0f2f5;
-}
-
-.pagination-info {
-  font-size: 0.85rem;
-  color: #718096;
-}
-
-.pagination-controls {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.page-nav-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 32px;
-  height: 32px;
-  border: 1px solid #e2e8f0;
-  background: white;
-  border-radius: 6px;
-  color: #718096;
-  cursor: pointer;
-  transition: all 0.2s;
-}
-
-.page-nav-btn:hover:not(.disabled) {
-  border-color: #5d9cec;
-  color: #5d9cec;
-}
-
-.page-nav-btn.disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
-  background: #f8fafc;
-}
-
-.page-number {
-  width: 32px;
-  height: 32px;
-  border: 1px solid #e2e8f0;
-  background: white;
-  border-radius: 6px;
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: #718096;
-  cursor: pointer;
-  transition: all 0.2s;
-}
-
-.page-number.active {
-  background: #5d9cec;
-  border-color: #5d9cec;
-  color: white;
-}
-
-.page-number:hover:not(.active) {
-  border-color: #5d9cec;
-  color: #5d9cec;
-=======
 /* ========================================= */
 /* === MAIN CONTAINER & LAYOUT === */
 /* ========================================= */
 .applicants-container { 
   display: flex; 
   flex-direction: column; 
-  gap: 16px; 
+  gap: 20px; 
   max-width: 1400px;
   font-family: 'Inter', sans-serif; 
 }
 
-
+/* Tab Title Area */
 .tab-title-area {
   display: flex;
   align-items: center;
-  margin-top: -30px;
   gap: 15px;
   margin-bottom: 5px;
 }
@@ -309,12 +187,14 @@
 }
 
 .applicants-table th { 
-  background: rgba(245, 246, 249, 0.933); 
+  background: #f8fafc; 
   padding: 16px 20px; 
   font-size: 0.85rem; 
-  color: #3b82f6; /* Matching the bright blue */
+  color: #5d9cec;
   border-bottom: 1px solid #e2e8f0; 
-  font-weight: 600; 
+  font-weight: 700; 
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .applicants-table td { 
@@ -358,33 +238,29 @@
   padding: 4px 16px; 
   border-radius: 6px; 
   font-size: 0.75rem; 
-  font-weight: 700; 
+  font-weight: 800; 
   display: inline-block; 
   border: 1px solid transparent;
 }
 
 .status-pill.applied { 
-  background: #eff6ff; 
-  color: #3b82f6; 
-  border-color: #bfdbfe; 
+  background: #eef5ff; 
+  color: #5d9cec; 
 }
 
 .status-pill.interview { 
-  background: #faf5ff; 
-  color: #a855f7; 
-  border-color: #e9d5ff; 
+  background: #f5f3ff; 
+  color: #a29bfe; 
 }
 
 .status-pill.hired { 
-  background: #f0fdf4; 
-  color: #22c55e; 
-  border-color: #bbf7d0; 
+  background: #ebfbf2; 
+  color: #2ecc71; 
 }
 
 .status-pill.rejected { 
-  background: #fef2f2; 
-  color: #ef4444; 
-  border-color: #fecaca; 
+  background: #fff1f0; 
+  color: #e74c3c; 
 }
 
 .actions { 
@@ -405,7 +281,7 @@
 }
 
 .action-icon:hover { 
-  color: #3b82f6; 
+  color: #5d9cec; 
 }
 
 /* ========================================= */
@@ -415,20 +291,20 @@
   display: flex; 
   justify-content: space-between; 
   align-items: center; 
-  padding: 16px 20px; 
+  padding: 20px 25px; 
   background: white; 
   border-top: 1px solid #e2e8f0; 
 }
 
 .pagination-info { 
   font-size: 0.85rem; 
-  color: #64748b; 
+  color: #718096; 
 }
 
 .pagination-controls { 
   display: flex; 
   align-items: center; 
-  gap: 4px; 
+  gap: 8px; 
 }
 
 .page-nav-text {
@@ -441,10 +317,11 @@
   color: #94a3b8;
   cursor: pointer;
   padding: 4px 8px;
+  transition: color 0.2s;
 }
 
 .page-nav-text:hover:not(:disabled) { 
-  color: #334155; 
+  color: #5d9cec; 
 }
 
 .page-nav-text:disabled { 
@@ -452,14 +329,40 @@
   cursor: not-allowed; 
 }
 
+.page-nav-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border: 1px solid #e2e8f0;
+  background: white;
+  border-radius: 6px;
+  color: #718096;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.page-nav-btn:hover:not(.disabled) {
+  border-color: #5d9cec;
+  color: #5d9cec;
+}
+
+.page-nav-btn.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background: #f8fafc;
+}
+
 .page-number { 
-  width: 28px; 
-  height: 28px; 
-  border: none;
-  background: transparent; 
-  border-radius: 4px; 
+  width: 32px; 
+  height: 32px; 
+  border: 1px solid #e2e8f0;
+  background: white; 
+  border-radius: 6px; 
   font-size: 0.85rem; 
-  color: #64748b; 
+  font-weight: 600; 
+  color: #718096; 
   cursor: pointer; 
   transition: all 0.2s; 
   display: flex;
@@ -468,25 +371,25 @@
 }
 
 .page-number.active { 
-  background: #fbbf24; 
+  background: #5d9cec; 
+  border-color: #5d9cec; 
   color: white; 
-  font-weight: 600; 
 }
 
 .page-number:hover:not(.active) { 
-  background: #f1f5f9; 
-  color: #0f172a; 
+  border-color: #5d9cec; 
+  color: #5d9cec; 
 }
 
 .no-data { 
   padding: 40px; 
   text-align: center; 
-  color: #64748b; 
+  color: #718096; 
   font-style: italic; 
 }
 
 /* ========================================= */
-/* === MODAL STYLING (Kept the same) === */
+/* === MODAL STYLING === */
 /* ========================================= */
 .app-modal-overlay {
   position: fixed; 
@@ -552,6 +455,13 @@
   position: absolute; 
   right: 20px; 
   top: 20px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-modal-close-btn:hover {
+  opacity: 0.8;
 }
 
 .app-modal-body { 
@@ -692,6 +602,12 @@
   font-size: 0.85rem; 
   font-weight: 600; 
   cursor: pointer; 
+  transition: background 0.2s;
+}
+
+.app-btn-view:hover,
+.app-btn-download:hover {
+  background: #4a7bb5;
 }
 
 .app-medical-box { 
@@ -719,6 +635,11 @@
   font-weight: 700; 
   font-size: 0.9rem; 
   cursor: pointer; 
+  transition: background 0.2s;
+}
+
+.app-btn-approve:hover {
+  background: #4a7bb5;
 }
 
 .app-btn-reject { 
@@ -730,5 +651,9 @@
   font-weight: 700; 
   font-size: 0.9rem; 
   cursor: pointer; 
->>>>>>> f0b5952 (jfjfj)
+  transition: background 0.2s;
+}
+
+.app-btn-reject:hover {
+  background: #e53e3e;
 }
